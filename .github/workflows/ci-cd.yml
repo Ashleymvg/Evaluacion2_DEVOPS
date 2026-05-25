@@ -24,7 +24,7 @@ jobs:
           context: ./back-Ventas_SpringBoot/Springboot-API-REST
           file: ./back-Ventas_SpringBoot/Springboot-API-REST/Dockerfile
           push: true
-          tags: caype/api_ventas:latest
+          tags: caypereira/api_ventas:latest
 
       # 2. Construir y subir API Despachos
       - name: Build & Push API Despachos
@@ -33,7 +33,7 @@ jobs:
           context: ./back-Despachos_SpringBoot/Springboot-API-REST-DESPACHO
           file: ./back-Despachos_SpringBoot/Springboot-API-REST-DESPACHO/Dockerfile
           push: true
-          tags: caype/api_despachos:latest
+          tags: caypereira/api_despachos:latest
 
       # 3. Construir y subir Frontend
       - name: Build & Push Frontend
@@ -42,4 +42,4 @@ jobs:
           context: ./front_despacho
           file: ./front_despacho/Dockerfile
           push: true
-          tags: caype/frontend_despacho:latest
+          tags: caypereira/frontend_despacho:latest
